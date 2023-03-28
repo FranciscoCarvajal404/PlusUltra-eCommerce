@@ -17,6 +17,7 @@ b {
   position: fixed;
   top: 0;
   color: #eeeeee;
+  transition: all ease 0.4s;
 }
 .header .header__input {
   display: none;
@@ -31,7 +32,7 @@ b {
   color: #eeeeee;
 }
 .header .header__input::placeholder {
-  color: rgba(238, 238, 238, 0.6);
+  color: rgba(238, 238, 238, 0.9);
 }
 .header .header__logo {
   display: flex;
@@ -56,6 +57,12 @@ b {
   color: #fca311;
   border: 1px #fca311 solid;
   transition: all ease 0.1s;
+}
+
+.header--active {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  transition: all ease 0.4s;
 }
 
 @media screen and (min-width: 768px) {
@@ -167,6 +174,11 @@ b {
   transition: all ease 0.1s;
 }
 
+@media screen and (min-width: 768px) {
+  .carrusel {
+    overflow: hidden;
+  }
+}
 .seccion {
   display: flex;
   align-items: center;
