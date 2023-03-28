@@ -1,0 +1,302 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+b {
+  font-weight: 700;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  color: #eeeeee;
+}
+.header .header__input {
+  display: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url(/assets/img/lupa.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  width: 30%;
+  padding: 0.75rem 16px;
+  border-radius: 10px;
+  color: #eeeeee;
+}
+.header .header__input::placeholder {
+  color: rgba(238, 238, 238, 0.6);
+}
+.header .header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header__logo img {
+  filter: sepia(5%) saturate(498%) hue-rotate(326deg) brightness(118%) contrast(87%);
+}
+.header .header__logo span {
+  display: none;
+}
+.header .btn {
+  border-radius: 10px;
+  background: none;
+  color: white;
+  border: 1px white solid;
+  padding: 0.75rem 2.5rem;
+  cursor: pointer;
+}
+.header .btn:hover {
+  color: #fca311;
+  border: 1px #fca311 solid;
+  transition: all ease 0.1s;
+}
+
+@media screen and (min-width: 768px) {
+  .header .header__logo span {
+    display: block;
+  }
+  .header .header__input {
+    display: block;
+  }
+  .header .header__lupa {
+    display: none;
+  }
+}
+.main {
+  background-image: url(/assets/img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  color: #eeeeee;
+  margin-bottom: 64px;
+}
+.main .main__mensaje {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 32px;
+}
+.main .main__mensaje h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+.main .main__mensaje h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.main .main__mensaje .btn {
+  border-radius: 10px;
+  background: none;
+  color: #eeeeee;
+  border: 1px #eeeeee solid;
+  padding: 0.75rem 0.75rem;
+  cursor: pointer;
+}
+.main .main__mensaje .btn:hover {
+  color: #fca311;
+  border: 1px #fca311 solid;
+  transition: all ease 0.1s;
+}
+
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: last baseline;
+  overflow: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  margin-bottom: 64px;
+}
+.carrusel .categorias__grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 0 32px;
+  margin-bottom: 32px;
+}
+.carrusel .categorias__grupo .categorias__img {
+  width: 70%;
+  max-width: 220px;
+  height: auto;
+}
+.carrusel .categorias__grupo .categorias__descripcion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.carrusel .categorias__grupo .categorias__descripcion .categorias__titulo {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #464646;
+}
+.carrusel .categorias__grupo .categorias__descripcion .categorias__descripcion {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #464646;
+}
+.carrusel .categorias__grupo .categorias__descripcion .btn {
+  border-radius: 10px;
+  background: none;
+  color: #464646;
+  border: 1px #464646 solid;
+  padding: 0.75rem 0.2rem;
+  cursor: pointer;
+}
+.carrusel .categorias__grupo .categorias__descripcion .btn:hover {
+  color: #fca311;
+  border: 1px #fca311 solid;
+  transition: all ease 0.1s;
+}
+
+.seccion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+.seccion .seccion__titulo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #464646;
+}
+.seccion .seccion__ref {
+  color: #14213d;
+  font-weight: 500;
+}
+.seccion .seccion__ref:hover {
+  color: #fca311;
+  transition: all ease 0.1s;
+}
+
+.articulo-box {
+  padding: 0 16px;
+}
+
+.articulos-grupo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 64px;
+}
+.articulos-grupo :nth-child(n+5) {
+  display: none;
+}
+
+.articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 47%;
+  margin-bottom: 16px;
+}
+.articulo .articulo__img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.articulo .articulo__descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.articulo .articulo__descripcion h3 {
+  color: #464646;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.articulo .articulo__descripcion h4 {
+  color: #464646;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.articulo .articulo__descripcion a {
+  color: #464646;
+  font-weight: 500;
+}
+.articulo .articulo__descripcion a:hover {
+  color: #fca311;
+  transition: all ease 0.1s;
+}
+
+@media screen and (min-width: 768px) {
+  .articulo {
+    width: 23%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .articulo {
+    width: 15%;
+  }
+  .articulos-grupo :nth-child(n+5) {
+    display: flex;
+  }
+}
+.footer {
+  background: #14213d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: #eeeeee;
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.footer .logo img {
+  filter: sepia(5%) saturate(498%) hue-rotate(326deg) brightness(118%) contrast(87%);
+}
+.footer .footer__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__div h2 {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.footer .redes {
+  display: flex;
+  gap: 16px;
+}
+.footer .redes .redes__img {
+  filter: invert(100%) sepia(5%) saturate(498%) hue-rotate(326deg) brightness(118%) contrast(87%);
+}
+.footer .redes .redes__img:hover {
+  filter: invert(59%) sepia(87%) saturate(491%) hue-rotate(352deg) brightness(102%) contrast(98%);
+  transition: all ease 0.1s;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,21 @@
+@import "./variables";
+
+@mixin btn($color, $padding-top, $padding-bottom){
+    border-radius: 10px;
+    background: none;
+
+    color: $color;
+
+    border: 1px $color solid;
+
+    padding: $padding-top $padding-bottom;
+
+    cursor: pointer;
+
+    &:hover{
+        color: $focus-color;
+        border: 1px $focus-color solid;
+
+        transition: all ease 0.1s;
+    }
+}
