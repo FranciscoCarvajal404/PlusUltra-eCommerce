@@ -1,0 +1,16 @@
+{
+    "articulos": [
+        {
+            "imagen": "#",
+            "titulo": "Titulo 1",
+            "precio": "10",
+            "id" : "1"
+        },
+        {
+            "imagen": "#",
+            "titulo": "Titulo 2",
+            "precio": "20",
+            "id" : "2"
+        }
+    ]
+}

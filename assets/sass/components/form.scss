@@ -1,0 +1,139 @@
+@import "../utilities/variables";
+
+.form__grupo{
+    width: 100%; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__label {
+    max-width: 800px;
+
+    position: relative;
+    font-size: 1.2rem;
+    width: 100%;
+    color: $clear-color;
+}
+
+.form__input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 60px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+
+    border: 0;
+    border-bottom: solid 2px grey;
+    border-radius: 10px;
+
+    margin-bottom: 4.5rem;
+    padding: 16px;
+    padding-bottom: 0;
+    color: $clear-color;
+
+    line-height: normal;
+}
+
+.form__input--mensaje{
+    padding-top: 24px;
+    padding-bottom: 12px;
+
+    display: block;
+    overflow: hidden;
+    resize: none;
+}
+
+.form__input:focus{
+    border-color: $focus-color;
+
+    transition: all 0.2s;
+}
+
+.form__input--invalid{
+    border: 2px solid #f73131;
+}
+
+.form__input-error{
+    color: #f73131;
+
+    position: absolute;
+    top: 65px;
+    left: 0px;
+}
+
+.form__input-error--message{
+    position: relative;
+    top: -45px;
+}
+
+.label-span {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    transition: all 0.2s;
+    pointer-events: none;
+
+    border-radius: 10px;
+
+    color: var(--color-parrafo);
+}
+
+.form__input:focus+.label-span{
+    top: 10px;
+    left: 16px;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    color: $focus-color;
+}
+
+.form__input.full+.label-span {
+    top: 10px;
+    left: 16px;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.form__btn{
+    cursor: pointer;
+
+    width: 100%;
+    max-width: 800px;
+    min-height: 60px;
+
+    padding: 8px 16px;
+    margin-bottom: 32px;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background: $accent-color;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+
+    transition: all 150ms;
+}
+
+.form__btn:hover{
+    background: $focus-color;
+    border-color: $focus-color;
+
+    transition: all 150ms;
+}
+
+.form__btn:disabled{
+    background: #acacac;
+    border: 2px solid #acacac;
+
+    color: #5f5f5f;
+
+    opacity: 0.6;
+
+    transition: all 150ms;
+}

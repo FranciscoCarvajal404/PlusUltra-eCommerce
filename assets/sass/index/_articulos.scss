@@ -107,5 +107,8 @@
         :nth-child(n+5){
             display: flex;
         }
+        :nth-child(n+7){
+            display: none;
+        }
     }
 }
